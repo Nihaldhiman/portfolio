@@ -57,7 +57,6 @@ body {
   padding: 100px 0;
 }
 .banner_sec .banner_title h1 {
-  font-size: 20px;
   font-weight: 800;
   color: #fff;
   margin-bottom: 30px;
@@ -191,6 +190,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-weight: 600;
+  margin-top: 20px;
 }
 .about_sec .resume_sec .resume_head {
   padding: 40px 0;
@@ -216,6 +216,10 @@ body {
   font-size: 25px;
   font-weight: 700;
   color: var(--chocalate);
+}
+.about_sec .resume_sec .resume_bx .resume-details .year_title {
+  font-weight: 600;
+  color: var(--orange);
 }
 .about_sec .resume_sec .resume_bx .resume-details .exp_img img {
   width: 80px;
