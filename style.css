@@ -15,6 +15,7 @@ body {
   --orange: #ef6d58;
   --cream: #fdf0e9;
   --chocalate: #391400;
+  --white:#fff;
 }
 
 :focus-visible {
@@ -22,6 +23,19 @@ body {
 }
 
 /* navbar css */
+.nav_sec .nav-menu {
+  background: transparent;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.4s;
+}
+.nav_sec .costum-navbar {
+  padding: 0;
+  background-color: #000 !important;
+  position: fixed;
+}
 .nav_sec .nav_bg {
   background-color: var(--purpel);
 }
@@ -66,6 +80,24 @@ body {
     font-size: 50px;
   }
 }
+.banner_sec .banner_title h1:hover {
+  animation: bounce 2s linear;
+  cursor: pointer;
+}
+@keyframes bounce {
+  20%, 50%, 80%, to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
 .banner_sec .banner_txt {
   display: flex;
   align-items: center;
@@ -87,10 +119,32 @@ body {
   margin-right: 11px;
   margin-bottom: 0;
 }
+.banner_sec .box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+}
+.banner_sec .bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .banner_sec .banner_txt p {
   font-size: 44px;
   font-weight: 500;
-  color: var(--orange);
+  color: #fff;
   margin-bottom: 0;
 }
 .banner_sec .banner_info p {
@@ -284,11 +338,40 @@ body {
 .project_sec .project_tab .nav-tabs .nav-link:focus-visible {
   outline: unset;
 }
-.project_sec .project_tab .work_img img {
+.project_sec .project_tab .work_img {
   height: 416px;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.project_sec .project_tab .work_img .child {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 1.1s;
+}
+.project_sec .project_tab .work_img .bg-one {
+  background-image: url(image/work_img1.png);
+}
+.project_sec .project_tab .work_img .bg-two {
+  background-image: url(image/work_img2.png);
+}
+.project_sec .project_tab .work_img .bg-three {
+  background-image: url(image/work_img3.png);
+}
+.project_sec .project_tab .work_img .bg-four {
+  background-image: url(image/work_img4.png);
+}
+.project_sec .project_tab .work_img .bg-five {
+  background-image: url(image/work_img5.png);
+}
+.project_sec .project_tab .work_img .bg-admin-one {
+  background-image: url(image/admin_work1.png);
+}
+.project_sec .project_tab .work_img:hover .child {
+  transform: scale(1.2);
 }
 
 .skill_sec {

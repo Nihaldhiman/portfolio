@@ -15,6 +15,7 @@ body {
   --orange: #ef6d58;
   --cream: #fdf0e9;
   --chocalate: #391400;
+  --white:#fff;
 }
 
 // overwrite css
@@ -25,6 +26,20 @@ body {
 /* navbar css */
 
 .nav_sec {
+  .nav-menu {
+    background: transparent;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.4s;
+  }
+
+  .costum-navbar {
+    padding: 0;
+    background-color: #000 !important;
+    position: fixed;
+  }
   .nav_bg {
     background-color: var(--purpel);
   }
@@ -72,8 +87,31 @@ body {
       @media (max-width: 992px) {
         font-size: 50px;
       }
+
+      &:hover {
+        animation: bounce 2s linear;
+        cursor: pointer;
+      } 
+    }
+
+    @keyframes bounce {
+      20%,50%,80%,to{
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-30px);
+      }
+      70% {
+        transform: translateY(-15px);
+      }
+      90% {
+        transform: translateY(-4px);
+      }
     }
   }
+
+
   .banner_txt {
     display: flex;
     align-items: center;
@@ -95,10 +133,28 @@ body {
     margin-bottom: 0;
   }
 
+  .box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
   .banner_txt p {
     font-size: 44px;
     font-weight: 500;
-    color: var(--orange);
+    color: #fff;
     margin-bottom: 0;
   }
   .banner_info p {
@@ -117,9 +173,10 @@ body {
     @media (max-width: 992px) {
       padding: 18px 30px;
     }
-  }
-  .btn-orange:hover {
-    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
   }
   .btn-cream {
     border-radius: 6px;
@@ -242,7 +299,7 @@ body {
         .year_title {
           font-weight: 600;
           color: var(--orange);
-        } 
+        }
         .exp_img img {
           width: 80px;
           width: 80px;
@@ -311,11 +368,44 @@ body {
         }
       }
     }
-    .work_img img {
+    .work_img {
       height: 416px;
-      object-fit: cover;
       border-radius: 10px;
-    }
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+
+      .child {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: all 1.1s;
+      }
+
+      .bg-one {
+        background-image: url(image/work_img1.png);
+      }
+      .bg-two {
+        background-image: url(image/work_img2.png);
+      }
+      .bg-three {
+        background-image: url(image/work_img3.png);
+      }
+      .bg-four {
+        background-image: url(image/work_img4.png);
+      }
+      .bg-five {
+        background-image: url(image/work_img5.png);
+      }
+      .bg-admin-one {
+        background-image: url(image/admin_work1.png);
+      }
+
+      &:hover .child {
+        transform: scale(1.2);
+      }
+    } 
   }
 }
 
