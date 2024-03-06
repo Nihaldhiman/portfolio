@@ -80,6 +80,11 @@ body {
     font-size: 50px;
   }
 }
+@media (max-width: 480px) {
+  .banner_sec .banner_title h1 {
+    font-size: 25px;
+  }
+}
 .banner_sec .banner_title h1:hover {
   animation: bounce 2s linear;
   cursor: pointer;
@@ -119,6 +124,12 @@ body {
   margin-right: 11px;
   margin-bottom: 0;
 }
+@media (max-width: 480px) {
+  .banner_sec .banner_txt h4 {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
 .banner_sec .box {
   align-self: flex-end;
   animation-duration: 2s;
@@ -146,6 +157,11 @@ body {
   font-weight: 500;
   color: #fff;
   margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .banner_sec .banner_txt p {
+    font-size: 30px;
+  }
 }
 .banner_sec .banner_info p {
   font-size: 16px;
@@ -198,6 +214,11 @@ body {
     padding: 30px;
   }
 }
+@media (max-width: 480px) {
+  .about_sec {
+    padding: 10px;
+  }
+}
 @media (max-width: 1200px) {
   .about_sec .about_img img {
     width: 100%;
@@ -208,6 +229,11 @@ body {
   font-weight: 800;
   color: var(--chocalate);
   margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .about_sec .about_info .about_head h2 {
+    font-size: 40px;
+  }
 }
 .about_sec .about_info .about_head p {
   font-size: 20px;
@@ -254,6 +280,11 @@ body {
   font-weight: 800;
   color: var(--chocalate);
   margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .about_sec .resume_sec .resume_head h2 {
+    font-size: 40px;
+  }
 }
 .about_sec .resume_sec .resume_bx .resume-details {
   border-radius: 6px 0px 0px 6px;
@@ -302,6 +333,12 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .project_sec .project_title h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
 .project_sec .project_tab {
   padding: 50px 0;
 }
@@ -313,6 +350,11 @@ body {
   width: 320px;
   margin: auto;
   justify-content: center;
+}
+@media (max-width: 480px) {
+  .project_sec .project_tab .nav-tabs {
+    width: 100%;
+  }
 }
 .project_sec .project_tab .nav-tabs .nav-link.active {
   color: #000;
@@ -385,6 +427,11 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 480px) {
+  .skill_sec .skill_title h1 {
+    font-size: 40px;
+  }
+}
 .skill_sec .skill_title .skill_bx {
   border-radius: 10px;
   border: 1px solid #f3d1bf;
@@ -419,6 +466,11 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 480px) {
+  .contact_sec .contact_head h1 {
+    font-size: 30px;
+  }
+}
 .contact_sec .contact_head p {
   font-size: 18px;
   font-weight: 600;
@@ -434,6 +486,12 @@ body {
 .contact_sec .contact_menu ul {
   display: flex;
   justify-content: center;
+  padding-left: 0;
+}
+@media (max-width: 576px) {
+  .contact_sec .contact_menu ul {
+    flex-wrap: wrap;
+  }
 }
 .contact_sec .contact_menu ul li {
   list-style: none;
@@ -444,6 +502,12 @@ body {
   font-weight: 500;
   padding: 0 30px;
   color: var(--chocalate);
+}
+@media (max-width: 992px) {
+  .contact_sec .contact_menu ul li a {
+    font-size: 15px;
+    padding: 0 10px;
+  }
 }
 .contact_sec .contact_info {
   border-radius: 6px 0px 0px 6px;
@@ -462,7 +526,13 @@ body {
 .contact_sec .contact_info p {
   font-size: 17px;
   font-weight: 500;
+  margin-bottom: 0;
   color: var(--orange);
+}
+@media (max-width: 480px) {
+  .contact_sec .contact_info p {
+    font-size: 13px;
+  }
 }
 .contact_sec .contact_info .contect_icon {
   width: 50px;

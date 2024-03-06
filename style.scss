@@ -87,6 +87,9 @@ body {
       @media (max-width: 992px) {
         font-size: 50px;
       }
+      @media (max-width: 480px) {
+        font-size: 25px;
+      }
 
       &:hover {
         animation: bounce 2s linear;
@@ -121,17 +124,23 @@ body {
     }
   }
 
-  .banner_txt h4 {
-    padding: 20px 15px;
-    border-radius: 8px;
-    border-radius: 8px;
-    background-color: var(--orange);
-    color: #fff;
-    font-size: 26px;
-    font-weight: 900;
-    margin-right: 11px;
-    margin-bottom: 0;
-  }
+  .banner_txt {
+    h4 {
+      padding: 20px 15px;
+      border-radius: 8px;
+      border-radius: 8px;
+      background-color: var(--orange);
+      color: #fff;
+      font-size: 26px;
+      font-weight: 900;
+      margin-right: 11px;
+      margin-bottom: 0;
+      @media (max-width:480px) {
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+  } 
 
   .box {
     align-self: flex-end;
@@ -156,6 +165,10 @@ body {
     font-weight: 500;
     color: #fff;
     margin-bottom: 0;
+
+    @media (max-width:480px) {
+      font-size: 30px;
+    }
   }
   .banner_info p {
     font-size: 16px;
@@ -208,6 +221,10 @@ body {
     padding: 30px;
   }
 
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
+
   .about_img {
     img {
       @media (max-width: 1200px) {
@@ -222,6 +239,9 @@ body {
         font-weight: 800;
         color: var(--chocalate);
         margin-bottom: 30px;
+        @media (max-width:480px) {
+          font-size: 40px;
+        }
       }
       p {
         font-size: 20px;
@@ -278,6 +298,9 @@ body {
         font-weight: 800;
         color: var(--chocalate);
         margin-bottom: 30px;
+        @media (max-width:480px) {
+          font-size: 40px;
+        }
       }
     }
     .resume_bx {
@@ -317,6 +340,7 @@ body {
 .project_sec {
   background-color: var(--purpel);
   padding: 60px 0;
+ 
   .project_title {
     p {
       font-size: 16px;
@@ -331,6 +355,11 @@ body {
       color: #fff;
       margin-bottom: 30px;
       text-align: center;
+
+      @media (max-width: 480px) {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
     }
   }
   .project_tab {
@@ -343,6 +372,9 @@ body {
       width: 320px;
       margin: auto;
       justify-content: center;
+      @media (max-width:480px) {
+        width: 100%;
+      }
       .nav-link.active {
         color: #000;
       }
@@ -414,6 +446,7 @@ body {
 .skill_sec {
   background-color: var(--cream);
   padding: 60px 0;
+
   .skill_title {
     h1 {
       color: var(--chocalate);
@@ -421,6 +454,9 @@ body {
       font-weight: 800;
       text-align: center;
       margin-bottom: 30px;
+      @media (max-width:480px) {
+        font-size: 40px;
+      }
     }
     .skill_bx {
       border-radius: 10px;
@@ -459,6 +495,9 @@ body {
       font-weight: 800;
       text-align: center;
       margin-bottom: 30px;
+      @media (max-width:480px) {
+        font-size: 30px;
+      }
     }
 
     p {
@@ -476,6 +515,11 @@ body {
     ul {
       display: flex;
       justify-content: center;
+      padding-left: 0;
+
+      @media (max-width:576px) {
+        flex-wrap: wrap;
+      }
       li {
         list-style: none;
         a {
@@ -484,6 +528,11 @@ body {
           font-weight: 500;
           padding: 0 30px;
           color: var(--chocalate);
+
+          @media (max-width:992px) {
+            font-size: 15px;
+            padding: 0 10px;
+          }
         }
       }
     }
@@ -506,7 +555,11 @@ body {
     p {
       font-size: 17px;
       font-weight: 500;
+      margin-bottom: 0;
       color: var(--orange);
+      @media (max-width:480px) {
+        font-size: 13px;
+      }
     }
 
     .contect_icon {
